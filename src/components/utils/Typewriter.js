@@ -12,14 +12,13 @@ class Home extends Component {
     render() {
         
         const {words} = this.state
-        const type = <h1 style={{color: '#fff'}}> My name is Lord Cipher <Typewriter
+        const type = <Typewriter
         options={{
             strings: words,
             autoStart: true,
             loop: true,
         }}
         />
-        </h1>
         return (
             <div className="container">
 
