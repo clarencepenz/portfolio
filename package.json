@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-burger-menu": "^2.6.13",
+    "react-carousel-slider": "^2.0.13",
+    "react-customizable-progressbar": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-particles-js": "^2.7.1",
     "react-redux": "^7.2.0",

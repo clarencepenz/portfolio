@@ -17,5 +17,6 @@ const navBar ={
 
 const brand_name ={
     paddingLeft: '90px',
-    paddingTop: '20px'
+    paddingTop: '20px',
+    margin: '0'
 }
