@@ -52,12 +52,21 @@ export const StyledHeader = styled.div`
   
   .container-image{
     padding-top: 30px;
-    grid-auto-rows: 50px;
+    margin-left: 220px;
+
+    @media screen and (max-width: 700px) {
+      margin-left: 0;
+    }
   }
 
   .container-info{
     width: 70%;
     text-align: left;
     display: block;
+    grid-column: 4 / 4;
+
+    @media screen and (max-width: 700px) {
+      grid-column: 1 / 4;
+    }
   }
 `;
