@@ -5,18 +5,19 @@ import { StyledSkills } from '../styles/StyledSkills'
 export default class Skills extends Component {
     render() {
         return (
-                <div style={skillStyle}>
-                    <div >
+                <div>
+                    <h3 style={{marginLeft: '60px', paddingLeft: '10px', borderLeft: '3px solid green', marginBottom: '0'}}>Skills</h3>
+                    <div style={skillStyle}>
                         <StyledSkills>
-                            <div >
+                            <div>
                                 <ProgressBar
-                                    radius={100}
+                                    radius={50}
                                     progress={70}
                                     initialAnimation={true}
-                                    strokeWidth={18}
+                                    strokeWidth={9}
                                     strokeColor="#000"
                                     strokeLinecap="round"
-                                    trackStrokeWidth={18}
+                                    trackStrokeWidth={9}
                                 >
                                     <div style={indicator}>
                                         <div>React</div>
@@ -25,13 +26,13 @@ export default class Skills extends Component {
                             </div>
                             <div>
                                 <ProgressBar
-                                    radius={100}
+                                    radius={50}
                                     progress={50}
                                     initialAnimation={true}
-                                    strokeWidth={18}
+                                    strokeWidth={9}
                                     strokeColor="#5d9cec"
                                     strokeLinecap="round"
-                                    trackStrokeWidth={18}
+                                    trackStrokeWidth={9}
                                 >
                                     <div style={indicator}>
                                         <div>Node</div>
@@ -40,13 +41,13 @@ export default class Skills extends Component {
                             </div>
                             <div>
                                 <ProgressBar
-                                    radius={100}
+                                    radius={50}
                                     progress={40}
                                     initialAnimation={true}
-                                    strokeWidth={18}
+                                    strokeWidth={9}
                                     strokeColor="#5d9cec"
                                     strokeLinecap="round"
-                                    trackStrokeWidth={18}
+                                    trackStrokeWidth={9}
                                 >
                                     <div style={indicator}>
                                         <div>MongoDB</div>
@@ -55,13 +56,13 @@ export default class Skills extends Component {
                             </div>
                             <div>
                                 <ProgressBar
-                                    radius={100}
+                                    radius={50}
                                     progress={50}
                                     initialAnimation={true}
-                                    strokeWidth={18}
+                                    strokeWidth={9}
                                     strokeColor="#5d9cec"
                                     strokeLinecap="round"
-                                    trackStrokeWidth={18}
+                                    trackStrokeWidth={9}
                                 >
                                     <div style={indicator}>
                                         <div>Postgresql</div>
@@ -70,13 +71,13 @@ export default class Skills extends Component {
                             </div>
                             <div>
                                 <ProgressBar
-                                    radius={100}
+                                    radius={50}
                                     progress={50}
                                     initialAnimation={true}
-                                    strokeWidth={18}
+                                    strokeWidth={9}
                                     strokeColor="#5d9cec"
                                     strokeLinecap="round"
-                                    trackStrokeWidth={18}
+                                    trackStrokeWidth={9}
                                 >
                                     <div style={indicator}>
                                         <div>Express</div>
@@ -85,13 +86,13 @@ export default class Skills extends Component {
                             </div>
                             <div>
                                 <ProgressBar
-                                    radius={100}
-                                    progress={10}
+                                    radius={50}
+                                    progress={9}
                                     initialAnimation={true}
-                                    strokeWidth={18}
+                                    strokeWidth={9}
                                     strokeColor="#5d9cec"
                                     strokeLinecap="round"
-                                    trackStrokeWidth={18}
+                                    trackStrokeWidth={9}
                                 >
                                     <div style={indicator}>
                                         <div>Vue</div>
@@ -123,8 +124,10 @@ const indicator = {
 }
 
 const skillStyle ={
-    minHeight: '400px',
+    minHeight: '200px',
     textAlign: 'center',
-    backgroundColor: '#c4c4c4',
-    paddingLeft: '90px'
+    width: '80%',
+    margin: '0 auto',
+    paddingTop: '30px',
+    paddingBottom: '30px'
 }

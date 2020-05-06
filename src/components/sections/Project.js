@@ -70,7 +70,7 @@ export default class Project extends Component {
 
         let scientists = jsonData.Scientists.items.map((item, index) => 
             <div key = {index} >
-                <img style = {imgStyle} src = {item.imgSrc}/>
+                <img style = {imgStyle} src = {item.imgSrc} alt='project'/>
                 <p style = {textBoxStyle} >{item.name}</p>
                 <p style = {textBoxStyle2} >{item.des}</p>
             </div>
