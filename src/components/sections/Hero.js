@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {SocialMediaIconsReact} from 'social-media-icons-react';
 import { StyledHeader } from '../styles/StyledHero'
 
 export default class Hero extends Component {
@@ -16,6 +17,7 @@ export default class Hero extends Component {
                </div>
                <div className='container-info'>
                   <h4> About me </h4> 
+                  <h2>What i love doing...</h2>
                   <p>lorem ldlvn i rgroijgjr vrvrnkne c;aSn csd;cnd;v io n ksdc ;lkn dfoi dncodsc dknldkncd cnd ncdn
                       ncdcndkcnkncldn
                       dpcd pcdc 'mdck sdjk jdskvj dvmdvnvndv;najvnnvd;ladvhuv a ' ;OWOFEnnn;njvndjvnodvoiifhe80949r
@@ -23,6 +25,24 @@ export default class Hero extends Component {
                       hbhblkbblabjb j ;jk ;ajdlcbudbciub7r7474pc pabfjqfjjia efbfpuiqbpiuajdc ;acbj ;qj ;qfb;j ;j ;j;bcjj;;
                       qlafh  rhf;bciquhf pija cj a ;ainj; a;rjruipriuij ;aj ;jd ;adja;jbf;ja r;jbjuifriufui a; ;fbqrjf q;j fq
                   </p>
+                  <h2>What i love doing...</h2>
+                  <p>lorem ldlvn i rgroijgjr vrvrnkne c;aSn csd;cnd;v io n ksdc ;lkn dfoi dncodsc dknldkncd cnd ncdn
+                      ncdcndkcnkncldn
+                      dpcd pcdc 'mdck sdjk jdskvj dvmdvnvndv;najvnnvd;ladvhuv a ' ;OWOFEnnn;njvndjvnodvoiifhe80949r
+                      efieckenkenckcneihehnvenvjnecine hfhh lj ljr ;kj ;kmd a;k djk;a;jd ; j dn cm ;k jka;kjaj ; jevevv
+                      hbhblkbblabjb j ;jk ;ajdlcbudbciub7r7474pc pabfjqfjjia efbfpuiqbpiuajdc ;acbj ;qj ;qfb;j ;j ;j;bcjj;;
+                      qlafh  rhf;bciquhf pija cj a ;ainj; a;rjruipriuij ;aj ;jd ;adja;jbf;ja r;jbjuifriufui a; ;fbqrjf q;j fq
+                  </p>
+                  <div className='button-container'>
+                     <button>Download cv</button>
+                  </div>
+                  <div className='social-links'>
+                    <ul>
+                        <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="twitter" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="github" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="medium" url="https://twitter.com/your-twitter-handle"/></li>
+                    </ul>
+                  </div>
                </div>
             </div>
             </StyledHeader>

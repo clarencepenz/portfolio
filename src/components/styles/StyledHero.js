@@ -4,6 +4,16 @@ export const StyledHeader = styled.div`
   box-sizing: border-box;
   overflow: hidden;
   
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+  }
+
+  li {
+    padding-left: 25px;
+  }
 
   h3 {
     margin-left: 60px;
@@ -20,6 +30,25 @@ export const StyledHeader = styled.div`
   p { 
       margin-top: 2px;
   }
+
+  .social-links {
+      width: 90%;
+  }
+
+  button {
+    border: none;
+    color: #fff;
+    background-color: green;
+    padding: 10px 40px;
+    border-radius: 25px;
+  }
+
+  .button-container {
+    @media screen and (max-width: 700px) {
+      text-align: center!important;
+    }
+  }
+
   .hero-style {
     min-height: 400px;
     text-align: center;
