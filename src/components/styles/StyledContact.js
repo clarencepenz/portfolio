@@ -16,25 +16,25 @@ export const StyledContact = styled.div`
   }
 
   input {
-      width: 250px!important;
+      width: 60%!important;
       margin-bottom: 10px!important;
       border-radius: 25px;
       border: 2px solid green;
       padding: 10px 0 10px 10px;
 
       @media screen and (max-width: 700px) {
-        width: 200px!important;
+        width: 80%!important;
     }
   }
 
   textarea {
-    width: 250px!important;
+    width: 60%!important;
     border-radius: 25px;
     border: 2px solid green;
     padding: 10px 0 10px 10px;
 
     @media screen and (max-width: 700px) {
-        width: 200px!important;
+        width: 80%!important;
     }
   }
 
