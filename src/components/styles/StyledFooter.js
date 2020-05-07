@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledFooter = styled.div`
   box-sizing: border-box;
   overflow: hidden;
+  color: #fff;
+  background-color: #000;
   
   
   ul {

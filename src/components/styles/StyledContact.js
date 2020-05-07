@@ -6,7 +6,8 @@ export const StyledContact = styled.div`
   overflow: hidden;
   background-color: maroon;
   min-height: 200px;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
   
  
 
@@ -51,7 +52,7 @@ export const StyledContact = styled.div`
       text-align: center;
       padding-bottom: 40px;
       margin: 0 auto;
-      width: 50%;
+      width: 30%;
   }
   @media screen and (max-width: 700px) {
     

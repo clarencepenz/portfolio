@@ -11,7 +11,7 @@ export default class Footer extends Component {
                 </div>
                 <div>
                     <ul>
-                        <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="twitter" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="twitter" backgroundColor='#000' url="https://twitter.com/your-twitter-handle"/></li>
                         <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="github" url="https://twitter.com/your-twitter-handle"/></li>
                         <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="medium" url="https://twitter.com/your-twitter-handle"/></li>
                     </ul>
