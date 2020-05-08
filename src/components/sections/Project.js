@@ -51,8 +51,8 @@ export default class Project extends Component {
         };
         
         let textBoxStyle = {
-            width: "40%",
-            top: "290px",
+            width: "70%",
+            top: "270px",
             color: "black",
             background: "transparent",
             fontSize: "14px",
@@ -60,6 +60,15 @@ export default class Project extends Component {
         };
 
         let textBoxStyle2 = {
+            width: "70%",
+            top: "300px",
+            color: "black",
+            background: "transparent",
+            fontSize: "12px",
+            fontStyle: "italic"
+        };
+        
+        let textBoxStyle3 = {
             width: "70%",
             top: "330px",
             color: "black",
@@ -73,6 +82,7 @@ export default class Project extends Component {
                 <img style = {imgStyle} src = {item.imgSrc} alt='project'/>
                 <p style = {textBoxStyle} >{item.name}</p>
                 <p style = {textBoxStyle2} >{item.des}</p>
+                <p style = {textBoxStyle3} >Checkout</p>
             </div>
         );
 

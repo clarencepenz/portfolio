@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 class Home extends Component {
     state={
-      words: ['I am a Web developer', "Fullstack", 'MERN STACK', 'Hit me up soon']
+      words: ['I am a Fullstack Web developer  MERN STACK']
     }
 
     render() {

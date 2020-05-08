@@ -34,7 +34,7 @@ function Trick() {
         > 
         {<NavBar/>}
           <h1 style={{textAlign: 'center', paddingTop: '120px', color: '#fff', marginBottom: '2px'}}>Hi, i am Lord Cipher</h1>
-          <h3 style={{textAlign: 'center', marginTop: '2px', color: '#fff'}}>{type}</h3>
+          <h3 style={{textAlign: 'center', color: '#fff', width: '24%', margin: '0 auto', height: 'auto'}}>{type}</h3>
           {/* You can render <Route> and <NavTabs /> here */}
         </div>
       </div>

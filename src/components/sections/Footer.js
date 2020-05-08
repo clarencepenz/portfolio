@@ -7,6 +7,7 @@ export default class Footer extends Component {
         return (
             <StyledFooter>
                 <div>
+                    <p>Designed and Built by Clarence</p>
                     <p>Copyright &copy;2020 All rights reserved</p>
                 </div>
                 <div>
