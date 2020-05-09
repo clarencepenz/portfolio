@@ -32,7 +32,11 @@ export const StyledHeader = styled.div`
   }
 
   .social-links {
-      width: 90%;
+      width: 98%;
+
+      @media screen and (max-width: 700px) {
+        width: 90%;
+      }
   }
 
   button {

@@ -36,6 +36,7 @@ export default class Hero extends Component {
                   <div className='button-container'>
                      <button>Download cv</button>
                   </div>
+                  <h6 style={{textAlign: 'center'}}>Want to get in touch?</h6> 
                   <div className='social-links'>
                     <ul>
                         <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="twitter" url="https://twitter.com/your-twitter-handle"/></li>

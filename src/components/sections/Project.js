@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {  StyledProject } from '../styles/StyledProject'
 import CarouselSlider from "react-carousel-slider"
 
 export default class Project extends Component {
@@ -78,12 +79,28 @@ export default class Project extends Component {
         };
 
         let scientists = jsonData.Scientists.items.map((item, index) => 
-            <div key = {index} >
-                <img style = {imgStyle} src = {item.imgSrc} alt='project'/>
-                <p style = {textBoxStyle} >{item.name}</p>
+          <StyledProject>
+            <div className='card '>
+            <div key = {index} className='front' >
+                <img  src = {item.imgSrc} alt='project'/>
+                {/* <p style = {textBoxStyle} >{item.name}</p>
                 <p style = {textBoxStyle2} >{item.des}</p>
-                <p style = {textBoxStyle3} >Checkout</p>
+                <p style = {textBoxStyle3} >Checkout</p> */}
             </div>
+            <div className="back">
+                <div className="back-content ">
+                <h2>Project name</h2>
+                <span>Desc</span>
+                <div className="sm">
+                    <a href="#"><i className="fab fa-facebook-f"></i>d</a>
+                    <a href="#"><i className="fab fa-twitter"></i>d</a>
+                    <a href="#"><i className="fab fa-youtube"></i>d</a>
+                    <a href="#"><i className="fab fa-instagram"></i>d</a>
+                </div>
+                </div>
+            </div>
+            </div>
+          </StyledProject>
         );
 
         let btnWrapperStyle = {
