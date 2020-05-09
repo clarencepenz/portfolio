@@ -42,7 +42,7 @@ export default class Project extends Component {
             padding: "0px",
             background: "white",
             margin:"0 30px",
-            boxShadow: "1px 1px 1px 1px #9E9E9E",
+            boxShadow: "none",
             borderRadius: "4px"
         };
 
@@ -129,7 +129,7 @@ export default class Project extends Component {
         </div>);        
         
         let scientistsCard = (<CarouselSlider 
-            sliderBoxStyle = {{height: "450px", width: "80%", background: "transparent"}} 
+            sliderBoxStyle = {{height: "450px", width: "80%", background: "transparent", overflow: 'hidden'}} 
             accEle = {{dots: false}}
             slideCpnts = {scientists} 
             itemsStyle = {itemsStyle} 

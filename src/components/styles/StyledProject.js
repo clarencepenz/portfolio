@@ -8,6 +8,7 @@ export const StyledProject = styled.div`
   .card{
     cursor: pointer;
     overflow: hidden!important;
+    background-color: #000!important;
   }
 
   .middle{
@@ -24,18 +25,20 @@ export const StyledProject = styled.div`
     backface-visibility: hidden;
     transition: transform .6s linear;
   }
+
   .front img{
     height: 100%;
   }
+
   .front{
     transform: perspective(600px) rotateY(0deg);
   }
+  
   .back{
     position: absolute;
     top: 0;
     left: 0;
-    overflow: hidden!important;
-    background: #f1f1f1;
+    background-color: #f1f1f1;
     transform: perspective(600px) rotateY(180deg);
   }
   .back-content{
