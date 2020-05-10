@@ -47,7 +47,7 @@ export const StyledProject = styled.div`
     width: 100%;
   }
   .sm{
-    margin: 20px 0;
+    margin: 130px 0;
   }
   .sm a{
     display: inline-flex;

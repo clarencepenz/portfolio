@@ -53,7 +53,7 @@ export default class Project extends Component {
         
         let textBoxStyle = {
             width: "70%",
-            top: "270px",
+            top: "90px",
             color: "black",
             background: "transparent",
             fontSize: "14px",
@@ -62,7 +62,7 @@ export default class Project extends Component {
 
         let textBoxStyle2 = {
             width: "70%",
-            top: "300px",
+            top: "130px",
             color: "black",
             background: "transparent",
             fontSize: "12px",
@@ -71,7 +71,7 @@ export default class Project extends Component {
         
         let textBoxStyle3 = {
             width: "70%",
-            top: "330px",
+            top: "150px",
             color: "black",
             background: "transparent",
             fontSize: "12px",
@@ -83,14 +83,15 @@ export default class Project extends Component {
             <div className='card '>
             <div key = {index} className='front' >
                 <img  src = {item.imgSrc} alt='project'/>
-                {/* <p style = {textBoxStyle} >{item.name}</p>
-                <p style = {textBoxStyle2} >{item.des}</p>
-                <p style = {textBoxStyle3} >Checkout</p> */}
             </div>
             <div className="back">
                 <div className="back-content ">
                 <h2>Project name</h2>
-                <span>Desc</span>
+                <span>
+                    <p style = {textBoxStyle} >{item.name}</p>
+                     <p style = {textBoxStyle2} >{item.des}</p>
+                     <p style = {textBoxStyle3} >Checkout</p>
+                </span>
                 <div className="sm">
                     <a href="#"><i className="fab fa-facebook-f"></i>d</a>
                     <a href="#"><i className="fab fa-twitter"></i>d</a>

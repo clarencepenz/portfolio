@@ -6,7 +6,7 @@ export default class Contact extends Component {
         return (
             <StyledContact>
                 <div style={{paddingTop: '20px'}}>
-                  <h3 style={{ marginLeft: '60px', marginTop: '0',  paddingLeft: '10px', borderLeft: '3px solid green', marginBottom: '0'}}>Contact</h3>
+                  <h3 style={{ marginLeft: '60px', marginTop: '0',  paddingLeft: '10px', borderLeft: '6px solid green', marginBottom: '0'}}>Contact</h3>
                 </div>
                 <div className='contactStyle'>
                 <h3>Wanna reach out? Send a msg</h3>

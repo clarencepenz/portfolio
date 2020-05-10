@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledHeader = styled.div`
   box-sizing: border-box;
   overflow: hidden;
+  background-color: #000;
+  color: #fff;
   
   ul {
     display: flex;
@@ -15,10 +17,11 @@ export const StyledHeader = styled.div`
     padding-left: 25px;
   }
 
+
   h3 {
     margin-left: 60px;
     padding-left: 10px;
-    border-left: 3px solid green;
+    border-left: 5px solid green;
     margin-bottom: 0;
   }
  
@@ -79,7 +82,7 @@ export const StyledHeader = styled.div`
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 2px solid green;
+    border: 4px solid green;
     background-color: #000;
   }
   

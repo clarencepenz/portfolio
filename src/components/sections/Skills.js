@@ -5,8 +5,8 @@ import { StyledSkills } from '../styles/StyledSkills'
 export default class Skills extends Component {
     render() {
         return (
-                <div>
-                    <h3 style={{marginLeft: '60px', paddingLeft: '10px', borderLeft: '3px solid green', marginBottom: '0'}}>Skills</h3>
+                <div style={{backgroundColor: '#000', color: '#fff'}}>
+                    <h3 style={{marginLeft: '60px', paddingLeft: '10px', borderLeft: '6px solid green', marginBottom: '0', marginTop: '0'}}>Skills</h3>
                     <div style={skillStyle}>
                         <StyledSkills>
                             <div>
@@ -15,7 +15,7 @@ export default class Skills extends Component {
                                     progress={70}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="#000"
+                                    strokeColor="green"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -30,7 +30,7 @@ export default class Skills extends Component {
                                     progress={50}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="#5d9cec"
+                                    strokeColor="green"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -45,7 +45,7 @@ export default class Skills extends Component {
                                     progress={40}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="#5d9cec"
+                                    strokeColor="green"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -60,12 +60,12 @@ export default class Skills extends Component {
                                     progress={50}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="#5d9cec"
+                                    strokeColor="green"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
                                     <div style={indicator}>
-                                        <div>Postgresql</div>
+                                        <div>Postgres</div>
                                     </div>
                                 </ProgressBar>
                             </div>
@@ -75,7 +75,7 @@ export default class Skills extends Component {
                                     progress={50}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="#5d9cec"
+                                    strokeColor="green"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -90,7 +90,7 @@ export default class Skills extends Component {
                                     progress={9}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="#5d9cec"
+                                    strokeColor="green"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -117,9 +117,9 @@ const indicator = {
     width: '100%',
     height: '100%',
     margin:' 0 auto',
-    fontSize: '1.2em',
+    fontSize: '1.1em',
     fontWeight: '100',
-    color: '#555',
+    color: '#fff',
     userSelect: 'none'
 }
 
@@ -129,5 +129,7 @@ const skillStyle ={
     width: '80%',
     margin: '0 auto',
     paddingTop: '30px',
-    paddingBottom: '30px'
+    paddingBottom: '30px',
+    backgroundColor: '#000',
+    color: '#fff'
 }

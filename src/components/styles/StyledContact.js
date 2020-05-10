@@ -6,8 +6,8 @@ export const StyledContact = styled.div`
   overflow: hidden;
   background-color: maroon;
   min-height: 200px;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
   
  
 

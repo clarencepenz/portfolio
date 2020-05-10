@@ -39,9 +39,9 @@ export default class Hero extends Component {
                   <h6 style={{textAlign: 'center'}}>Want to get in touch?</h6> 
                   <div className='social-links'>
                     <ul>
-                        <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="twitter" url="https://twitter.com/your-twitter-handle"/></li>
-                        <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="github" url="https://twitter.com/your-twitter-handle"/></li>
-                        <li><SocialMediaIconsReact roundness={50}  size={30} iconSize={1} icon="medium" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50} backgroundColor='#000' borderColor='green' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="twitter" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50}  backgroundColor='#000' borderColor='green' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="github" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50} backgroundColor='#000' borderColor='green' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="medium" url="https://twitter.com/your-twitter-handle"/></li>
                     </ul>
                   </div>
                </div>
