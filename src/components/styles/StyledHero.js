@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledHeader = styled.div`
   box-sizing: border-box;
   overflow: hidden;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
   background-color: #000;
   color: #fff;
   
@@ -17,21 +19,46 @@ export const StyledHeader = styled.div`
     padding-left: 25px;
   }
 
+  h2 {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 24px;
+  }
 
   h3 {
-    margin-left: 60px;
-    padding-left: 10px;
-    border-left: 5px solid green;
+    padding-left: 20px;
+    border-left: 5px solid #33a21d;
     margin-bottom: 0;
+    font-family: sans-serif;
+
   }
  
   h4 {
       margin-bottom: 2px;
       text-align: center;
+      font-family: sans-serif;
+      font-size: 24px;
+  }
+
+  h6 {
+    font-family: sans-serif;
+    font-size: 12px;
   }
   
   p { 
       margin-top: 2px;
+      color: #c0c0c0;
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      font-size: 14px;
+  }
+
+  .about {
+    padding-left: 90px;
+
+    
+    @media screen and (max-width: 700px) {
+      padding-left: 20px!important;
+    }
   }
 
   .social-links {
@@ -45,7 +72,7 @@ export const StyledHeader = styled.div`
   button {
     border: none;
     color: #fff;
-    background-color: green;
+    background-color: #33a21d;
     padding: 10px 40px;
     border-radius: 25px;
   }
@@ -82,7 +109,7 @@ export const StyledHeader = styled.div`
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 4px solid green;
+    border: 4px solid #33a21d;
     background-color: #000;
   }
   

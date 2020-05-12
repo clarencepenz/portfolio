@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 class Home extends Component {
     state={
-      words: ['I am a Fullstack Web developer  MERN STACK']
+      words: ['I am a Fullstack Web developer', 'MERN STACK']
     }
 
     render() {
@@ -16,8 +16,9 @@ class Home extends Component {
         options={{
             strings: words,
             autoStart: true,
-            loop: true,
+            loop: true
         }}
+        
         />
         return (
             <div className="container">

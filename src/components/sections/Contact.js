@@ -6,15 +6,21 @@ export default class Contact extends Component {
         return (
             <StyledContact>
                 <div style={{paddingTop: '20px'}}>
-                  <h3 style={{ marginLeft: '60px', marginTop: '0',  paddingLeft: '10px', borderLeft: '6px solid green', marginBottom: '0'}}>Contact</h3>
+                  <h3 className='title' style={{ marginLeft: '90px', marginTop: '0',  paddingLeft: '20px', borderLeft: '6px solid #33a21d', marginBottom: '0'}}>Contact</h3>
                 </div>
                 <div className='contactStyle'>
-                <h3>Wanna reach out? Send a msg</h3>
+                <h3>Wanna hire me?</h3>
                 <form>
                     <input
                         type='text'
                         value=''
                         placeholder='Enter your name'
+                        />
+                        <br/>
+                        <input
+                        type='text'
+                        value=''
+                        placeholder='Subject'
                         />
                         <br/>
                         <input
@@ -29,7 +35,7 @@ export default class Contact extends Component {
                         placeholder='Enter your message'
                         />
                         <br/>
-                        <button>Send message</button>
+                        <button>Send</button>
                 </form>
                 </div>
             </StyledContact>

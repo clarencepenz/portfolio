@@ -6,7 +6,7 @@ export default class Hero extends Component {
     render() {
         return (
             <StyledHeader>
-            <div>
+            <div className='about'>
                 <h3>About</h3>
             </div>
             <div className='hero-style' >
@@ -39,9 +39,9 @@ export default class Hero extends Component {
                   <h6 style={{textAlign: 'center'}}>Want to get in touch?</h6> 
                   <div className='social-links'>
                     <ul>
-                        <li><SocialMediaIconsReact roundness={50} backgroundColor='#000' borderColor='green' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="twitter" url="https://twitter.com/your-twitter-handle"/></li>
-                        <li><SocialMediaIconsReact roundness={50}  backgroundColor='#000' borderColor='green' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="github" url="https://twitter.com/your-twitter-handle"/></li>
-                        <li><SocialMediaIconsReact roundness={50} backgroundColor='#000' borderColor='green' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="medium" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50} backgroundColor='#000' borderColor='#33a21d' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="twitter" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50}  backgroundColor='#000' borderColor='#33a21d' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="github" url="https://twitter.com/your-twitter-handle"/></li>
+                        <li><SocialMediaIconsReact roundness={50} backgroundColor='#000' borderColor='#33a21d' borderWidth={3}  borderStyle='solid' size={30} iconSize={1} icon="medium" url="https://twitter.com/your-twitter-handle"/></li>
                     </ul>
                   </div>
                </div>

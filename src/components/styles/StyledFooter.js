@@ -5,13 +5,15 @@ export const StyledFooter = styled.div`
   overflow: hidden;
   color: #fff;
   background-color: #000;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
   
   
   ul {
     display: flex;
     list-style: none;
     justify-content: center;
-    padding: 0;
+    padding: 3px 0 3px 0;
   }
 
   li {
@@ -20,6 +22,9 @@ export const StyledFooter = styled.div`
 
   p {
       text-align: center;
+      @media screen and (max-width: 700px) {
+        font-size: 10px!important;
+    }
   }
   
 

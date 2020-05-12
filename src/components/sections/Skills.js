@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import ProgressBar from 'react-customizable-progressbar'
-import { StyledSkills } from '../styles/StyledSkills'
+import { StyledSkills, StyledTitle } from '../styles/StyledSkills'
 
 export default class Skills extends Component {
     render() {
         return (
                 <div style={{backgroundColor: '#000', color: '#fff'}}>
-                    <h3 style={{marginLeft: '60px', paddingLeft: '10px', borderLeft: '6px solid green', marginBottom: '0', marginTop: '0'}}>Skills</h3>
+                    <StyledTitle>
+                         <h3 className='title' style={{marginLeft: '90px', lineHeight: '1.6rem', letterSpacing:' 0.1rem', paddingLeft: '20px', borderLeft: '6px solid #33a21d', marginBottom: '0', marginTop: '0'}}>Skills</h3>
+                    </StyledTitle>
                     <div style={skillStyle}>
                         <StyledSkills>
                             <div>
@@ -15,7 +17,7 @@ export default class Skills extends Component {
                                     progress={70}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="green"
+                                    strokeColor="#33a21d"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -30,7 +32,7 @@ export default class Skills extends Component {
                                     progress={50}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="green"
+                                    strokeColor="#33a21d"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -45,7 +47,7 @@ export default class Skills extends Component {
                                     progress={40}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="green"
+                                    strokeColor="#33a21d"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -60,7 +62,7 @@ export default class Skills extends Component {
                                     progress={50}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="green"
+                                    strokeColor="#33a21d"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -75,7 +77,7 @@ export default class Skills extends Component {
                                     progress={50}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="green"
+                                    strokeColor="#33a21d"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >
@@ -90,7 +92,7 @@ export default class Skills extends Component {
                                     progress={9}
                                     initialAnimation={true}
                                     strokeWidth={9}
-                                    strokeColor="green"
+                                    strokeColor="#33a21d"
                                     strokeLinecap="round"
                                     trackStrokeWidth={9}
                                 >

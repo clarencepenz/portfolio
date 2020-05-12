@@ -2,6 +2,7 @@ import React from 'react'
 import Typewriter from './Typewriter';
 import Particle from './Particle';
 import NavBar from '../sections/NavBar';
+import { StyledTrick } from '../styles/StyledTrick';
 
 
 function Trick() {
@@ -33,8 +34,10 @@ function Trick() {
           }}
         > 
         {<NavBar/>}
-          <h1 style={{textAlign: 'center', paddingTop: '120px', color: '#fff', marginBottom: '2px'}}>Hi, i am Lord Cipher</h1>
-          <h3 style={{textAlign: 'center', color: '#fff', width: '18%', margin: '0 auto', height: 'auto'}}>{type}</h3>
+        <StyledTrick>
+          <h1 style={{textAlign: 'center', paddingTop: '120px', color: '#fff', marginBottom: '20px', fontSize: '40px'}}>Hi, i am Lord Cipher</h1>
+          <h3 style={{textAlign: 'center', color: '#fff', width: '80%', margin: '0 auto', height: 'auto'}}>{type}</h3>
+        </StyledTrick>
           {/* You can render <Route> and <NavTabs /> here */}
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {  StyledProject } from '../styles/StyledProject'
+import {StyledProject, StyledContainer} from '../styles/StyledProject'
 import CarouselSlider from "react-carousel-slider"
 
 export default class Project extends Component {
@@ -41,7 +41,7 @@ export default class Project extends Component {
         let itemsStyle = {
             padding: "0px",
             background: "white",
-            margin:"0 30px",
+            margin:"0 10px",
             boxShadow: "none",
             borderRadius: "4px"
         };
@@ -54,7 +54,7 @@ export default class Project extends Component {
         let textBoxStyle = {
             width: "70%",
             top: "90px",
-            color: "black",
+            color: "#fff",
             background: "transparent",
             fontSize: "14px",
             fontFamily: "Times New Roman"
@@ -63,7 +63,7 @@ export default class Project extends Component {
         let textBoxStyle2 = {
             width: "70%",
             top: "130px",
-            color: "black",
+            color: "#fff",
             background: "transparent",
             fontSize: "12px",
             fontStyle: "italic"
@@ -72,7 +72,7 @@ export default class Project extends Component {
         let textBoxStyle3 = {
             width: "70%",
             top: "150px",
-            color: "black",
+            color: "#fff",
             background: "transparent",
             fontSize: "12px",
             fontStyle: "italic"
@@ -140,11 +140,16 @@ export default class Project extends Component {
         />);
 
         return (
-          <div style={projectStyle}>
-            <div style = {{position:"relative", margin: "0 auto", width: "90%"}} >
-                {scientistsCard}
+         <StyledContainer>
+            <div style={projectStyle}>
+                <div style={{paddingTop: '20px'}}>
+                    <h3 className='title' style={{ marginLeft: '90px', marginTop: '0',  paddingLeft: '20px', borderLeft: '6px solid #33a21d', marginBottom: '0', textAlign: 'left'}}>Projects</h3>
+                </div>
+                <div style = {{position:"relative", margin: "0 auto", width: "90%"}} >
+                    {scientistsCard}
+                </div>
             </div>
-         </div>
+         </StyledContainer>
         );
     }
 }

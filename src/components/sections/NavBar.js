@@ -1,22 +1,15 @@
 import React, { Component } from 'react'
+import { StyledNav } from '../styles/StyledNav'
 
 export default class NavBar extends Component {
     render() {
         return (
-            <div style={navBar}>
-                <h1 style={brand_name}>Clarence</h1>
-            </div>
+            <StyledNav>
+                
+                    <h1>Clarence</h1>
+                
+            </StyledNav>
         )
     }
 }
 
-
-const navBar ={
-    color: '#fff'
-}
-
-const brand_name ={
-    paddingLeft: '90px',
-    paddingTop: '20px',
-    margin: '0'
-}

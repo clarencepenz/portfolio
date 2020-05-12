@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 
 export const StyledProject = styled.div`
+line-height: 1.6rem;
+letter-spacing: 0.1rem;
 
 
 
@@ -22,6 +24,7 @@ export const StyledProject = styled.div`
     width: 100%!important;
     height: 100%;
     overflow: hidden;
+    border-radius: 2%;
     backface-visibility: hidden;
     transition: transform .6s linear;
   }
@@ -38,11 +41,12 @@ export const StyledProject = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #f1f1f1;
+    background-color: #000;
+    border: 2px solid  #33a21d;
     transform: perspective(600px) rotateY(180deg);
   }
   .back-content{
-    color: #2c3e50;
+    color: #fff;
     text-align: center;
     width: 100%;
   }
@@ -55,13 +59,13 @@ export const StyledProject = styled.div`
     height: 40px;
     justify-content: center;
     align-items: center;
-    color: #2c3e50;
+    color: #fff;
     font-size: 18px;
     transition: 0.4s;
     border-radius: 50%
   }
   .sm a:hover{
-    background: #2c3e50;
+    background: #33a21d;
     color: white;
   }
   .card:hover > .front{
@@ -73,6 +77,23 @@ export const StyledProject = styled.div`
   
 
  
+  @media screen and (max-width: 700px) {
+    
+  }
+
+`;
+
+
+export const StyledContainer = styled.div`
+line-height: 1.6rem;
+letter-spacing: 0.1rem;
+
+.title {
+  @media screen and (max-width: 700px) {
+    margin-left: 20px!important;
+  }
+}
+  
   @media screen and (max-width: 700px) {
     
   }

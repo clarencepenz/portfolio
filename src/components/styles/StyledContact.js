@@ -4,48 +4,70 @@ import styled from 'styled-components';
 export const StyledContact = styled.div`
   box-sizing: border-box;
   overflow: hidden;
-  background-color: maroon;
   min-height: 200px;
   color: #fff;
   background-color: #000;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
   
  
+  h3 {
+    font-size: 24px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 12px;
+    }
+  }
 
   form {
       background-color: #000;
       padding: 40px 0;
+
+      @media screen and (max-width: 700px) {
+        padding: 20px 0px;
+    }
   }
 
   input {
-      width: 60%!important;
+      width: 80%!important;
       margin-bottom: 10px!important;
       border-radius: 25px;
-      border: 2px solid green;
+      border: 2px solid #33a21d;
       padding: 10px 0 10px 10px;
 
       @media screen and (max-width: 700px) {
-        width: 80%!important;
+        width: 100%!important;
     }
   }
 
   textarea {
-    width: 60%!important;
+    width: 80%!important;
     border-radius: 25px;
-    border: 2px solid green;
+    border: 2px solid #33a21d;
     padding: 10px 0 10px 10px;
 
     @media screen and (max-width: 700px) {
-        width: 80%!important;
+        width: 100%!important;
     }
   }
 
   button {
     border: none;
     color: #fff;
-    background-color: green;
-    padding: 10px 40px;
+    background-color: #33a21d;
+    padding: 20px 38%;
     margin-top: 10px;
     border-radius: 25px;
+
+    @media screen and (max-width: 700px) {
+      padding: 10px 38%;
+    }
+  }
+
+  .title {
+    @media screen and (max-width: 700px) {
+      margin-left: 20px!important;
+    }
   }
 
   .contactStyle {
