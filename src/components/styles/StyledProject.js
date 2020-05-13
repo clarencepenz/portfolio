@@ -51,7 +51,7 @@ letter-spacing: 0.1rem;
     width: 100%;
   }
   .sm{
-    margin: 130px 0;
+    margin: 170px 0;
   }
   .sm a{
     display: inline-flex;

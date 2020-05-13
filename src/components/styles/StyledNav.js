@@ -10,8 +10,8 @@ export const StyledNav = styled.div`
   h1 {
     letter-spacing: 0.1rem;
     margin: 0;
-    font-size: 24px;
-    padding-left: 40px;
+    font-size: 34px;
+    padding-left: 90px;
     padding-top: 20px;
   }
 
