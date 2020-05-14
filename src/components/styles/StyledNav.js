@@ -13,6 +13,10 @@ export const StyledNav = styled.div`
     font-size: 34px;
     padding-left: 90px;
     padding-top: 20px;
+
+    @media screen and (max-width: 700px) {
+      padding-left: 20px;
+  }
   }
 
 `;

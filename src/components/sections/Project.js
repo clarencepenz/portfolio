@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {StyledProject, StyledContainer} from '../styles/StyledProject'
 import CarouselSlider from "react-carousel-slider"
 import Blog from '../../images/blog.png'
+import CipherSeries from '../../images/cipher-series.png'
 import Remote from '../../images/remote.png'
 
 export default class Project extends Component {
@@ -16,25 +17,33 @@ export default class Project extends Component {
                         "imgSrc": Blog,
                         "name": "Blog",
                         "des": "A mini blog showing the basic CRUD features",
-                        "tech": "React, Express, Node, Postgres"
+                        "tech": "React, Express, Node, Postgres",
+                        "url" : '',
+                        "code" : ''
                     },
                     {
                         "imgSrc": Remote,
                         "name": "Remote",
                         "des": "An Api for movies using react",
-                        "tech": "React..."
+                        "tech": "React...",
+                        "url" : '',
+                        "code" : ''
                     },
                     {
-                        "imgSrc": Blog,
-                        "name": "Blog",
-                        "des": "A mini blog showing the basic CRUD features",
-                        "tech": "React, Express, Node, Postgres"
+                        "imgSrc": CipherSeries,
+                        "name": "Series API",
+                        "des": "An Api for movies using react",
+                        "tech": "React",
+                        "url" : 'https://cipher-series.netlify.app/',
+                        "code" : 'https://github.com/clarencepenz/series-web-app'
                     },
                     {
                         "imgSrc": Remote,
                         "name": "Remote",
                         "des": "An Api for movies using react",
-                        "tech": "React..."
+                        "tech": "React...",
+                        "url" : '',
+                        "code" : ''
                     }
                 ]
             }
@@ -55,10 +64,11 @@ export default class Project extends Component {
         
         let textBoxStyle = {
             width: "70%",
-            top: "90px",
+            top: "100px",
             color: "#fff",
             background: "transparent",
             fontSize: "14px",
+            textAlign: "left",
             fontFamily: "Times New Roman"
         };
 
@@ -90,12 +100,12 @@ export default class Project extends Component {
                 <div className="back-content ">
                 <h2>{item.name}</h2>
                 <span>
-                     <p style = {textBoxStyle} >Technology:{ ' '}{item.tech}</p>
+                     <p style = {textBoxStyle} >Technology: <br/>{item.tech}</p>
                      <p style = {textBoxStyle2} >{item.des}</p>
                 </span>
                 <div className="sm">
-                    <a href="#"><i className="fab fa-facebook-f"></i>d</a>
-                    <a href="#"><i className="fab fa-twitter"></i>d</a>
+                    <a href={item.url}><i className="fab fa-facebook-f"></i>d</a>
+                    <a href={item.code}><i className="fab fa-twitter"></i>d</a>
                 </div>
                 </div>
             </div>

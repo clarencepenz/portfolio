@@ -17,21 +17,17 @@ export default class Hero extends Component {
                </div>
                <div className='container-info'>
                   <h4> About me </h4> 
-                  <h2>What i love doing...</h2>
-                  <p>lorem ldlvn i rgroijgjr vrvrnkne c;aSn csd;cnd;v io n ksdc ;lkn dfoi dncodsc dknldkncd cnd ncdn
-                      ncdcndkcnkncldn
-                      dpcd pcdc 'mdck sdjk jdskvj dvmdvnvndv;najvnnvd;ladvhuv a ' ;OWOFEnnn;njvndjvnodvoiifhe80949r
-                      efieckenkenckcneihehnvenvjnecine hfhh lj ljr ;kj ;kmd a;k djk;a;jd ; j dn cm ;k jka;kjaj ; jevevv
-                      hbhblkbblabjb j ;jk ;ajdlcbudbciub7r7474pc pabfjqfjjia efbfpuiqbpiuajdc ;acbj ;qj ;qfb;j ;j ;j;bcjj;;
-                      qlafh  rhf;bciquhf pija cj a ;ainj; a;rjruipriuij ;aj ;jd ;adja;jbf;ja r;jbjuifriufui a; ;fbqrjf q;j fq
+                  <h2>Greetings! I am a Web developer from Nigeria.</h2>
+                  <p>I am a self-taught developer with roughly 2yrs of experience who uses modern technologies like React.js, Node.js, Express, MongoDB,
+                      Postgresql and Vue.js to translate designs and mockups into functional, quality and responsive webpages.
+                      I also offer backend services like integration of Restful API's, authentication with JWT e.t.c.
+                      I am open to work remotely and onsite.
                   </p>
-                  <h2>What i love doing...</h2>
-                  <p>lorem ldlvn i rgroijgjr vrvrnkne c;aSn csd;cnd;v io n ksdc ;lkn dfoi dncodsc dknldkncd cnd ncdn
-                      ncdcndkcnkncldn
-                      dpcd pcdc 'mdck sdjk jdskvj dvmdvnvndv;najvnnvd;ladvhuv a ' ;OWOFEnnn;njvndjvnodvoiifhe80949r
-                      efieckenkenckcneihehnvenvjnecine hfhh lj ljr ;kj ;kmd a;k djk;a;jd ; j dn cm ;k jka;kjaj ; jevevv
-                      hbhblkbblabjb j ;jk ;ajdlcbudbciub7r7474pc pabfjqfjjia efbfpuiqbpiuajdc ;acbj ;qj ;qfb;j ;j ;j;bcjj;;
-                      qlafh  rhf;bciquhf pija cj a ;ainj; a;rjruipriuij ;aj ;jd ;adja;jbf;ja r;jbjuifriufui a; ;fbqrjf q;j fq
+                  <h2>There's more.</h2>
+                  <p>
+                      I have a decent communication skill, and i value client's needs and requirements. If you are looking for 
+                      a web developer to help bring your ideas to life, work on an existing project or join a team of developers? 
+                      i am currently available to take on any project. 
                   </p>
                   <div className='button-container'>
                      <button>Download cv</button>
