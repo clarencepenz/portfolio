@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faGlobe, faArrowCircleRight, faArrowCircleLeft} from '@fortawesome/free-solid-svg-icons'
 import {StyledProject, StyledContainer} from '../styles/StyledProject'
 import CarouselSlider from "react-carousel-slider"
 import Blog from '../../images/blog.png'
 import CipherSeries from '../../images/cipher-series.png'
 import Remote from '../../images/remote.png'
 
+library.add(fab)
 export default class Project extends Component {
 
     render() {
@@ -56,11 +61,7 @@ export default class Project extends Component {
             boxShadow: "none",
             borderRadius: "4px"
         };
-
-        let imgStyle = {
-            height: "70%",
-            borderBottom: "1px solid #9E9E9E"
-        };
+ 
         
         let textBoxStyle = {
             width: "70%",
@@ -81,14 +82,7 @@ export default class Project extends Component {
             fontStyle: "italic"
         };
         
-        let textBoxStyle3 = {
-            width: "70%",
-            top: "150px",
-            color: "#fff",
-            background: "transparent",
-            fontSize: "12px",
-            fontStyle: "italic"
-        };
+     
 
         let scientists = jsonData.Scientists.items.map((item, index) => 
           <StyledProject>
@@ -104,8 +98,8 @@ export default class Project extends Component {
                      <p style = {textBoxStyle2} >{item.des}</p>
                 </span>
                 <div className="sm">
-                    <a href={item.url}><i className="fab fa-facebook-f"></i>d</a>
-                    <a href={item.code}><i className="fab fa-twitter"></i>d</a>
+                    <a href={item.url}><FontAwesomeIcon icon={faGlobe} /></a>
+                    <a href={item.code}><FontAwesomeIcon icon={['fab', 'github']} /></a>
                 </div>
                 </div>
             </div>
@@ -113,12 +107,22 @@ export default class Project extends Component {
           </StyledProject>
         );
 
-        let btnWrapperStyle = {
+        let btnWrapperStyleL = {
             position: "relative",
             borderRadius: "50%",
             height: "50px",
             width: "50px",
-            textAlign: "center"
+            textAlign: "center",
+            marginRight: "130px"                     
+        }
+
+        let btnWrapperStyleR = {
+            position: "relative",
+            borderRadius: "50%",
+            height: "50px",
+            width: "50px",
+            textAlign: "center",
+            marginLeft: "150px"         
         }
 
         let btnStyle = {
@@ -127,16 +131,17 @@ export default class Project extends Component {
             top: "50%",
             color: '#fff',
             transform: "translateY(-50%)",
-            fontSize: "36px"
+            fontSize: "30px"
         }
 
-        let rBtnCpnt = (<div style = {btnWrapperStyle} >
-            <div style = {btnStyle} className = "material-icons" >{'>'}</div>
+        let rBtnCpnt = (<div style = {btnWrapperStyleR} >
+            <div style = {btnStyle} className = "material-icons" ><FontAwesomeIcon icon={faArrowCircleRight} /></div>
         </div>);
 
-        let lBtnCpnt = (<div style = {btnWrapperStyle} >
-            <div style = {btnStyle} className = "material-icons" >{'<'}</div>
+        let lBtnCpnt = (<div style = {btnWrapperStyleL} >
+            <div style = {btnStyle} className = "material-icons" ><FontAwesomeIcon icon={faArrowCircleLeft} /></div>
         </div>);        
+           
         
         let scientistsCard = (<CarouselSlider 
             sliderBoxStyle = {{height: "450px", width: "80%", background: "transparent", overflow: 'hidden'}} 

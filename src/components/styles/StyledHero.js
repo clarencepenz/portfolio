@@ -19,6 +19,23 @@ export const StyledHeader = styled.div`
     padding-left: 25px;
   }
 
+  a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+    border: 2px solid #33a21d;
+  }
+
+  a:hover {
+    background: #33a21d;
+    color: #000;
+  }
+
   h2 {
     margin-bottom: 10px;
     font-family: sans-serif;
