@@ -15,23 +15,22 @@ export const StyledContact = styled.div`
     font-size: 24px;
 
       @media screen and (max-width: 700px) {
-        font-size: 12px;
+        font-size: 18px;
     }
   }
 
   form {
       background-color: #000;
       padding: 40px 0;
-      width: 100%;
+      width: 100%!important;
 
       @media screen and (max-width: 700px) {
         padding: 20px 0px;
-        min-width: 100%;
+        width: 100%!important;
     }
 
       @media screen and (max-width: 320px) {
         padding: 20px 0px;
-        min-width: 100%;
     }
   }
 
@@ -47,7 +46,7 @@ export const StyledContact = styled.div`
     }
  
     @media screen and (max-width: 320px) {
-      padding: 20px 0px;
+  
       min-width: 100%;
   }
 
@@ -88,9 +87,11 @@ export const StyledContact = styled.div`
       padding-bottom: 40px;
       margin: 0 auto;
       width: 30%;
+
+      @media screen and (max-width: 320px) {
+        width: 70%;
+      }
   }
-  @media screen and (max-width: 700px) {
-    
-  }
+ 
 
 `;
