@@ -22,9 +22,16 @@ export const StyledContact = styled.div`
   form {
       background-color: #000;
       padding: 40px 0;
+      width: 100%;
 
       @media screen and (max-width: 700px) {
         padding: 20px 0px;
+        min-width: 100%;
+    }
+
+      @media screen and (max-width: 320px) {
+        padding: 20px 0px;
+        min-width: 100%;
     }
   }
 
@@ -38,6 +45,12 @@ export const StyledContact = styled.div`
       @media screen and (max-width: 700px) {
         width: 100%!important;
     }
+ 
+    @media screen and (max-width: 320px) {
+      padding: 20px 0px;
+      min-width: 100%;
+  }
+
   }
 
   textarea {

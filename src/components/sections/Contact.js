@@ -2,6 +2,14 @@ import React, { Component } from 'react'
 import { StyledContact } from '../styles/StyledContact'
 
 export default class Contact extends Component {
+    state= {
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    }
+
+    onChange = (e) => this.setState({[e.target.name]: e.target.value})
     render() {
         return (
             <StyledContact>
@@ -13,26 +21,34 @@ export default class Contact extends Component {
                 <form>
                     <input
                         type='text'
-                        value=''
+                        name='name'
+                        value={this.state.name}
                         placeholder='Enter your name'
+                        onChange={this.onChange}
                         />
                         <br/>
                         <input
                         type='text'
-                        value=''
+                        name='subject'
+                        value={this.state.subject}
                         placeholder='Subject'
+                        onChange={this.onChange}
                         />
                         <br/>
                         <input
                         type='text'
-                        value=''
+                        name='email'
+                        value={this.state.email}
                         placeholder='Enter your email address'
+                        onChange={this.onChange}
                         />
                         <br/>
                         <textarea
                         type='text'
-                        value=''
+                        name='message'
+                        value={this.state.message}
                         placeholder='Enter your message'
+                        onChange={this.onChange}
                         />
                         <br/>
                         <button>Send</button>
