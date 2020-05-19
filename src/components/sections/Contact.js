@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect} from 'react-redux'
-import { createPost } from '../../actions/postAction'
+import { createMSG } from '../../actions/messageAction'
 import { StyledContact } from '../styles/StyledContact'
 
 class Contact extends Component {
@@ -21,7 +21,7 @@ class Contact extends Component {
             subject: this.state.subject,
             message: this.state.message
         }
-        this.props.createPost(data)
+        this.props.createMSG(data)
 
         this.setState({
             name: '',
@@ -81,4 +81,4 @@ class Contact extends Component {
 }
 
 
-export default  connect(null, {createPost})(Contact)
+export default  connect(null, {createMSG})(Contact)

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import { postReducer } from './Post'
+import { msgReducer } from './Message'
 
 
 export const rootReducer = combineReducers({
-    posts: postReducer
+    msg: msgReducer
 })

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { createPost } from '../../actions/postAction'
+import { createMSG } from '../../actions/messageAction'
 import Header from '../sections/Header'
 import Hero from '../sections/Hero'
 import Skills from '../sections/Skills'
@@ -27,7 +27,7 @@ class Portfolio extends Component {
 }
 
 const mapStateToProps = state => ({
-    posts: state.posts.posts
+    msg: state.msg.msg
 })
 
-export default connect(mapStateToProps, {createPost})(Portfolio);
+export default connect(mapStateToProps, {createMSG})(Portfolio);
