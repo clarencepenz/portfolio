@@ -88,7 +88,7 @@ export const StyledContact = styled.div`
       margin: 0 auto;
       width: 30%;
 
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 720px) {
         width: 70%;
       }
   }

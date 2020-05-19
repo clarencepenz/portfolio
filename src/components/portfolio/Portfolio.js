@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchPost } from '../../actions/postAction'
+import { createPost } from '../../actions/postAction'
 import Header from '../sections/Header'
 import Hero from '../sections/Hero'
 import Skills from '../sections/Skills'
@@ -10,7 +10,7 @@ import Footer from '../sections/Footer'
 
 class Portfolio extends Component {
     componentDidMount(){
-        this.props.fetchPost()
+       // this.props.createPost()
     }
     render() {
         return (
@@ -30,4 +30,4 @@ const mapStateToProps = state => ({
     posts: state.posts.posts
 })
 
-export default connect(mapStateToProps, {fetchPost})(Portfolio);
+export default connect(mapStateToProps, {createPost})(Portfolio);

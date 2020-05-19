@@ -11,7 +11,7 @@ export const StyledTrick = styled.div`
  h1{
     @media screen and (max-width: 700px) {
         font-size: 25px!important;
-        padding-top: 60px!important;
+        padding-top: 80px!important;
     }
  }
 

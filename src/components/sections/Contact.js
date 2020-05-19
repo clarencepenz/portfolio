@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+import { connect} from 'react-redux'
+import { createPost } from '../../actions/postAction'
 import { StyledContact } from '../styles/StyledContact'
 
-export default class Contact extends Component {
+class Contact extends Component {
     state= {
         name: '',
         email: '',
@@ -10,6 +12,25 @@ export default class Contact extends Component {
     }
 
     onChange = (e) => this.setState({[e.target.name]: e.target.value})
+
+    onSubmit =(e)=>{
+        e.preventDefault()
+        const data = {
+            name: this.state.name,
+            email: this.state.email,
+            subject: this.state.subject,
+            message: this.state.message
+        }
+        this.props.createPost(data)
+
+        this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            message: '' 
+        })
+    }
+    
     render() {
         return (
             <StyledContact>
@@ -18,7 +39,7 @@ export default class Contact extends Component {
                 </div>
                 <div className='contactStyle'>
                 <h3>Wanna hire me?</h3>
-                <form>
+                <form onSubmit={this.onSubmit}>
                     <input
                         type='text'
                         name='name'
@@ -51,7 +72,7 @@ export default class Contact extends Component {
                         onChange={this.onChange}
                         />
                         <br/>
-                        <button>Send</button>
+                        <button type='submit'>Send</button>
                 </form>
                 </div>
             </StyledContact>
@@ -60,3 +81,4 @@ export default class Contact extends Component {
 }
 
 
+export default  connect(null, {createPost})(Contact)
