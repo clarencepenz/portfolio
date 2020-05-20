@@ -1,7 +1,8 @@
-import {NEW_MSG } from '../actions/action-type'
+import {NEW_MSG, GET_MSGS, DELETE_MSG } from '../actions/action-type'
 
 const initialState ={
-    msg: {}
+    msg: {},
+    msgs: []
 }
 
 export const msgReducer =(state = initialState, action)=>{
@@ -10,8 +11,20 @@ export const msgReducer =(state = initialState, action)=>{
             return {
                 msg: action.payload
             }
+        case GET_MSGS:
+            return {
+                ...state,
+                msgs: action.payload
+            }
+        case DELETE_MSG:
+            const mid = action.payload.mid
+            return {
+                msgs: state.msgs.filter(msg => msg.mid !== mid),
+                ...state
+           }
         default:
             return state
     }
 
 }
+
