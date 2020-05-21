@@ -1,11 +1,12 @@
+import axios from 'axios'
 import { GET_PROJECTS, EDIT_PROJECT, NEW_PROJECT, DELETE_PROJECT} from './action-type'
 
-export const getProject = data => dispatch =>{
+export const getProject = () => dispatch =>{
     fetch('http://localhost:3000/api/v1/project')
     .then(res => res.json())
-    .then(msg => dispatch({
+    .then(project => dispatch({
         type: GET_PROJECTS,
-        payload: msg
+        payload: project
     }))
 }
 
@@ -39,16 +40,13 @@ export const delProject =(pid)=> dispatch =>{
 
 
 export const createProject = data => dispatch =>{
-    fetch('http://localhost:3000/api/v1/project', {
-        method: 'POST',
+    axios.post('http://localhost:3000/api/v1/project', data, {
         headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(data)
+            'content-type': 'multipart/form-data'
+        }
     })
-    .then(res => res.json())
-    .then(msg => dispatch({
+    .then(project => dispatch({
         type: NEW_PROJECT,
-        payload: msg
+        payload: project
     }))
 }

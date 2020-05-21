@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Messages from './Messages'
 import ProjectForm from './ProjectForm'
+import ProjectList from './ProjectList'
 
 class Admin extends Component {
     render() {
@@ -8,6 +9,7 @@ class Admin extends Component {
             <div>
                 <Messages/>
                 <ProjectForm/>
+                <ProjectList/>
             </div>
         )
     }

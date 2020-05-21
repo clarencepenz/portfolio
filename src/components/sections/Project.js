@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { getProject } from '../../actions/projectAction'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -10,7 +12,11 @@ import CipherSeries from '../../images/cipher-series.png'
 import Remote from '../../images/remote.png'
 
 library.add(fab)
-export default class Project extends Component {
+class Project extends Component {
+
+    componentDidMount(){
+        this.props.getProject()
+    }
 
     render() {
         const jsonData =  {
@@ -168,7 +174,12 @@ export default class Project extends Component {
     }
 }
 
+const mapStateToProps = (state)=>({
+    project: state.project.projects
+})
 
+
+export default connect(mapStateToProps, {getProject}) (Project)
 
 const projectStyle ={
     minHeight: '400px',
