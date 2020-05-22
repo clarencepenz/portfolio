@@ -2,13 +2,13 @@ import React from 'react';
 import { Provider } from 'react-redux'
 import {store } from './store'
 import './App.css';
-import Portfolio from './components/portfolio/Portfolio';
+import Routes from './routes/Routes';
 
 function App() {
   return (
     <Provider store={store}>
       <div>
-          <Portfolio/>
+          <Routes/>
       </div>
     </Provider>
   );
