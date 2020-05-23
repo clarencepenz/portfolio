@@ -10,15 +10,16 @@ class Messages extends Component {
     render() {
         const msgs = this.props.msg.map(msg => (
             <div key={msg.mid}>
-                {msg.name}
-                {msg.email}
-                {msg.subject}
-                {msg.message}
+                name: {msg.name}
+                email: {msg.email}
+               subject: {msg.subject}
+               message: {msg.message}
                 <button onClick={()=> this.props.delMsgs(msg.mid)}>x</button>
             </div>
         ))
         return (
             <div>
+                <h4>Messages</h4>
                 {msgs}
             </div>
         )

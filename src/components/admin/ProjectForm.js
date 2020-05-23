@@ -46,6 +46,7 @@ class ProjectForm extends Component {
         const {url, img} = this.state
         return (
             <div> 
+                <h3>project</h3>
                  <form onSubmit={this.onSubmit}  >
                  <div>
                         <img src={url  ? img  || url  : 'logo'  } alt='project' />
@@ -56,6 +57,7 @@ class ProjectForm extends Component {
                     className='Gif-Image-Select'
                     onChange={this.handleFile}
                     />
+                    <br/>
                     <input
                     type="text"
                     name="name"
@@ -63,6 +65,7 @@ class ProjectForm extends Component {
                     value={this.state.name}
                     onChange={this.onChange}
                     />
+                     <br/>
                     <input
                     type="text"
                     name="technologies"
@@ -70,6 +73,7 @@ class ProjectForm extends Component {
                     value={this.state.technologies}
                     onChange={this.onChange}
                     />
+                     <br/>
                     <input
                     type="text"
                     name="description"
@@ -77,6 +81,7 @@ class ProjectForm extends Component {
                     value={this.state.description}
                     onChange={this.onChange}
                     />
+                     <br/>
                     <input
                     type="text"
                     name="web"
@@ -84,6 +89,7 @@ class ProjectForm extends Component {
                     value={this.state.we}
                     onChange={this.onChange}
                     />
+                     <br/>
                     <input
                     type="text"
                     name="repo"
@@ -91,6 +97,7 @@ class ProjectForm extends Component {
                     value={this.state.repo}
                     onChange={this.onChange}
                     />
+                     <br/>
                      
                    
                     <button 
