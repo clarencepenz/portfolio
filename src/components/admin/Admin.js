@@ -10,10 +10,10 @@ class Admin extends Component {
             <div style={{backgroundColor: '#000', color: '#fff', minHeight: '100vh'}}>
                     <NavBar/>
                 <div style={{width: '85%', margin: '0 auto', display: 'flex'}}>
-                    <div>
+                    <div style={{width: '100%', margin: '0 auto'}}>
                          <Messages/>
                     </div>
-                    <div>
+                    <div style={{width: '70%', margin: '0 auto', paddingLeft: '20px'}}>
                       <ProjectForm/>
                       <ProjectList/>
                     </div>

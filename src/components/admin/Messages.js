@@ -8,19 +8,35 @@ class Messages extends Component {
     }
 
     render() {
-        const msgs = this.props.msg.map(msg => (
-            <div key={msg.mid}>
-                name: {msg.name}
-                email: {msg.email}
-               subject: {msg.subject}
-               message: {msg.message}
-                <button onClick={()=> this.props.delMsgs(msg.mid)}>x</button>
-            </div>
-        ))
         return (
             <div>
-                <h4>Messages</h4>
-                {msgs}
+                <h4>Messages {' '}  <span>{this.props.msg.length}</span></h4>
+                <table border='1'>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Subject</td>
+                            <td>Message</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            this.props.msg.map(msg =>{
+                                return (
+                                    <tr key={msg.mid}>
+                                        <td>{msg.name}</td>
+                                        <td>{msg.email}</td>
+                                        <td>{msg.subject}</td>
+                                        <td>{msg.message}</td>
+                                        <td><button onClick={()=> this.props.delMsgs(msg.mid)}>x</button></td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
             </div>
         )
     }

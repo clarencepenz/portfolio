@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const StyledNav = styled.div`
   box-sizing: border-box;
   color: #fff;
+  width: 300px;
  
   
    
