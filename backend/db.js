@@ -1,0 +1,17 @@
+const { Client } = require("pg");
+const dotenv = require('dotenv');
+dotenv.config();
+
+const client = new Client({
+    user:  process.env.USER,
+    password:  process.env.PASSWORD,
+    host:  process.env.HOST,
+    port:  process.env.PORT,
+    database:  process.env.DATABASE
+  });
+  
+  client.connect()
+  .then(() => console.log('connected successfully'))
+  .catch(e => console.log(e));
+
+  module.exports = client; 
