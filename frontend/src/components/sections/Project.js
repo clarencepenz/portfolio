@@ -10,6 +10,7 @@ import CarouselSlider from "react-carousel-slider"
 import Blog from '../../images/blog.png'
 import CipherSeries from '../../images/cipher-series.png'
 import Remote from '../../images/remote.png'
+import Spinner from '../utils/Spinner'
 
 library.add(fab)
 class Project extends Component {
@@ -90,22 +91,22 @@ class Project extends Component {
         
      
 
-        let scientists = jsonData.Scientists.items.map((item, index) => 
+        let scientists = this.props.project.map(pro => 
           <StyledProject>
             <div className='card '>
-            <div key = {index} className='front' >
-                <img  src = {item.imgSrc} alt='project'/>
+            <div key = {pro.key} className='front' >
+                <img  src = {pro.url} alt='project'/>
             </div>
             <div className="back">
                 <div className="back-content ">
-                <h2>{item.name}</h2>
+                <h2>{pro.name}</h2>
                 <span>
-                     <p style = {textBoxStyle} >Technology: <br/>{item.tech}</p>
-                     <p style = {textBoxStyle2} >{item.des}</p>
+                     <p style = {textBoxStyle} >Technology: <br/>{pro.technologies}</p>
+                     <p style = {textBoxStyle2} >{pro.description}</p>
                 </span>
                 <div className="sm">
-                    <a href={item.url}><FontAwesomeIcon icon={faGlobe} /></a>
-                    <a href={item.code}><FontAwesomeIcon icon={['fab', 'github']} /></a>
+                    <a href={pro.web}><FontAwesomeIcon icon={faGlobe} /></a>
+                    <a href={pro.repo}><FontAwesomeIcon icon={['fab', 'github']} /></a>
                 </div>
                 </div>
             </div>
@@ -159,6 +160,10 @@ class Project extends Component {
             lBtnCpnt = {lBtnCpnt}
         />);
 
+        
+        if ( this.props.pro ) return <Spinner/>  
+          
+
         return (
          <StyledContainer>
             <div style={projectStyle}>
@@ -175,7 +180,9 @@ class Project extends Component {
 }
 
 const mapStateToProps = (state)=>({
-    project: state.project.projects
+    project: state.project.projects,
+    pro: state.project.loading
+
 })
 
 

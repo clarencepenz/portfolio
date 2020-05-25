@@ -2,15 +2,16 @@ import {NEW_PROJECT, GET_PROJECTS, DELETE_PROJECT} from '../actions/action-type'
 
 const initialState ={
     project: {},
-    projects: []
+    projects: [],
+    loading: true
 }
 
 export const projectReducer =(state = initialState, action)=>{
     switch(action.type){
         case GET_PROJECTS:
             return {
-                ...state,
-                projects: action.payload
+                projects: action.payload,
+                loading: false
             }
         case NEW_PROJECT:
             return {

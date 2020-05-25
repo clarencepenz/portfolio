@@ -6,7 +6,8 @@ export const getProject = () => dispatch =>{
     .then(res => res.json())
     .then(project => dispatch({
         type: GET_PROJECTS,
-        payload: project
+        payload: project,
+        loading: false
     }))
 }
 
