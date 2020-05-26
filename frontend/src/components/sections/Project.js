@@ -7,9 +7,6 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe, faArrowCircleRight, faArrowCircleLeft} from '@fortawesome/free-solid-svg-icons'
 import {StyledProject, StyledContainer} from '../styles/StyledProject'
 import CarouselSlider from "react-carousel-slider"
-import Blog from '../../images/blog.png'
-import CipherSeries from '../../images/cipher-series.png'
-import Remote from '../../images/remote.png'
 import Spinner from '../utils/Spinner'
 
 library.add(fab)
@@ -20,47 +17,7 @@ class Project extends Component {
     }
 
     render() {
-        const jsonData =  {
-            "Scientists": {
-
-                "items": [
-                   
-                    {
-                        "imgSrc": Blog,
-                        "name": "Blog",
-                        "des": "A mini blog showing the basic CRUD features",
-                        "tech": "React, Express, Node, Postgres",
-                        "url" : '',
-                        "code" : ''
-                    },
-                    {
-                        "imgSrc": Remote,
-                        "name": "Remote",
-                        "des": "An Api for movies using react",
-                        "tech": "React...",
-                        "url" : '',
-                        "code" : ''
-                    },
-                    {
-                        "imgSrc": CipherSeries,
-                        "name": "Series API",
-                        "des": "An Api for movies using react",
-                        "tech": "React",
-                        "url" : 'https://cipher-series.netlify.app/',
-                        "code" : 'https://github.com/clarencepenz/series-web-app'
-                    },
-                    {
-                        "imgSrc": Remote,
-                        "name": "Remote",
-                        "des": "An Api for movies using react",
-                        "tech": "React...",
-                        "url" : '',
-                        "code" : ''
-                    }
-                ]
-            }
-        }
-
+    
         let itemsStyle = {
             padding: "0px",
             background: "white",
