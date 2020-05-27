@@ -9,6 +9,7 @@ export const StyledContact = styled.div`
   background-color: #000;
   line-height: 1.6rem;
   letter-spacing: 0.1rem;
+  padding-top: 40px;
   
  
   h3 {
