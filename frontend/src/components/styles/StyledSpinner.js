@@ -14,7 +14,7 @@ export const StyledSpinner = styled.div`
         justify-self: center!important;
         align-self: center!important;
         position: absolute;
-        top: 198%;
+        top: 185%;
         left: 50%;
         right: 50%;
 
