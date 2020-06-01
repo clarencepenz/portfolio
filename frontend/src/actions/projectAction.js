@@ -2,7 +2,7 @@ import axios from 'axios'
 import { GET_PROJECTS, EDIT_PROJECT, NEW_PROJECT, DELETE_PROJECT} from './action-type'
 
 export const getProject = () => dispatch =>{
-    fetch('http://localhost:3000/api/v1/project')
+    fetch('https://cipher-portfolio.herokuapp.com/api/v1/project')
     .then(res => res.json())
     .then(project => dispatch({
         type: GET_PROJECTS,
@@ -13,7 +13,7 @@ export const getProject = () => dispatch =>{
 
 
 export const editProject =( data, pid) => dispatch =>{
-    fetch(`http://localhost:3000/api/v1/project/${pid}`, {
+    fetch(`https://cipher-portfolio.herokuapp.com/api/v1/project/${pid}`, {
         method: 'PUT',
         headers: {
             'content-type': 'application/json'
@@ -29,7 +29,7 @@ export const editProject =( data, pid) => dispatch =>{
 
 
 export const delProject =(pid)=> dispatch =>{
-    fetch(`http://localhost:3000/api/v1/project/${pid}`, {
+    fetch(`https://cipher-portfolio.herokuapp.com/api/v1/project/${pid}`, {
         method: 'DELETE'
     })
     .then(res => res.json())
@@ -41,7 +41,7 @@ export const delProject =(pid)=> dispatch =>{
 
 
 export const createProject = data => dispatch =>{
-    axios.post('http://localhost:3000/api/v1/project', data, {
+    axios.post('https://cipher-portfolio.herokuapp.com/api/v1/project', data, {
         headers: {
             'content-type': 'multipart/form-data'
         }

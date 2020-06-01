@@ -2,7 +2,7 @@ import { GET_MSGS, DELETE_MSG, NEW_MSG} from './action-type'
 
 
 export const createMSG = data => dispatch =>{
-    fetch('http://localhost:3000/api/v1/message', {
+    fetch('https://cipher-portfolio.herokuapp.com/api/v1/message', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -17,7 +17,7 @@ export const createMSG = data => dispatch =>{
 }
 
 export const getMsgs =()=> dispatch =>{
-    fetch('http://localhost:3000/api/v1/message')
+    fetch('https://cipher-portfolio.herokuapp.com/api/v1/message')
     .then(res => res.json())
     .then(msg => dispatch({
         type: GET_MSGS,
@@ -27,7 +27,7 @@ export const getMsgs =()=> dispatch =>{
 
 
 export const delMsgs =(mid)=> dispatch =>{
-    fetch(`http://localhost:3000/api/v1/message/${mid}`, {
+    fetch(`https://cipher-portfolio.herokuapp.com/api/v1/message/${mid}`, {
         method: 'DELETE'
     })
     .then(res => res.json())
