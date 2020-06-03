@@ -26,7 +26,7 @@ class ProjectForm extends Component {
         this.props.createProject(data)
         
         this.setState({ 
-                        url: '',
+                        url: null,
                         name: '',
                         technologies: '',
                         description: '',

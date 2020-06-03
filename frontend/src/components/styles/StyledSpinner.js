@@ -13,10 +13,7 @@ export const StyledSpinner = styled.div`
         vertical-align: middle!important;
         justify-self: center!important;
         align-self: center!important;
-        position: absolute;
-        top: 185%;
-        left: 50%;
-        right: 50%;
+       
 
     @keyframes spin {
         0% {

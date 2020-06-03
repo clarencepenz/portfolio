@@ -7,3 +7,7 @@ export const NEW_PROJECT = 'NEW_PROJECT'
 export const GET_PROJECTS = 'GET_PROJECTS'
 export const EDIT_PROJECT = 'EDIT_PROJECT'
 export const DELETE_PROJECT = 'DELETE_PROJECT'
+
+export const ADMIN_LOGIN = 'ADMIN_LOGIN'
+
+export const AUTH_CHECK = 'AUTH_CHECK'
