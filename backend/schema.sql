@@ -18,3 +18,10 @@ CREATE TABLE projects (
     repo character(255),
     date time with time zone
 );
+
+CREATE TABLE users (
+    uid SERIAL PRIMARY KEY,
+    username character(255),
+    email character(255),
+    password text
+);
