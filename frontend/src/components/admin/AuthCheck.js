@@ -1,37 +1,49 @@
 import React, { Component } from 'react';
-import { authCheck } from '../../actions/authAction'
-import { connect } from 'react-redux'
+import axios from 'axios'
 import { Redirect } from 'react-router-dom';
 
-function withAuth(ComponentToProtect) {
+export default function withAuth(ComponentToProtect) {
   return class extends Component {
-   state ={
-       loading: true,
-       redirect: false
-   }
-    componentDidMount() {
-       this.props.authCheck()
+    constructor() {
+      super();
+      this.state = {
+        loading: true,
+        redirect: false,
+      };
     }
 
-    
+    componentDidMount() {
+      const token = localStorage.token
+      axios.get('http://localhost:5000/api/v1/checkAuth',{ 
+            headers: {
+               'Content-Type' : 'application/json',
+               'Authorization' : `Bearer ${token}`
+           }
+           })
+        .then(res => {
+          if (res.status === 200) {
+            this.setState({ loading: false });
+          } else {
+            const error = new Error(res.error);
+            throw error;
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          this.setState({ loading: false, redirect: true });
+        });
+    }
+
 
     render() {
-      if (this.state.loading) {
+      const { loading, redirect } = this.state;
+      if (loading) {
         return null;
       }
-      if (this.state.redirect) {
+      if (redirect) {
         return <Redirect to="/login" />;
       }
       return <ComponentToProtect {...this.props} />;
     }
   }
 }
-
-const mapStateToProps = (state)=>({
-    auth: state.auth.auth,
-    loading: state.auth.loading,
-    redirect: state.auth.redirect
-
-})
-
-export default connect(mapStateToProps, {authCheck})( withAuth)

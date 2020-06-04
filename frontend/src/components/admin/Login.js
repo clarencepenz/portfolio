@@ -28,7 +28,7 @@ class Login extends Component {
     
     render() {
         return (
-            <form onSubmit={this.onSubmit}>
+            <form onSubmit={this.onSubmit} style={{color: '#fff'}}>
                 <h2>ADMIN LOGIN</h2>
                 <div>
                 <label htmlFor="email">Email address</label>

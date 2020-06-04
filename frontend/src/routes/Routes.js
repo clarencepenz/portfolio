@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Portfolio from '../components/portfolio/Portfolio';
 import Admin from '../components/admin/Admin'
-import { authCheck } from '../actions/authAction';
+import AuthCheck from '../components/admin/AuthCheck';
 import Login from '../components/admin/Login';
 class Routes extends Component {
     render() {
@@ -15,8 +15,7 @@ class Routes extends Component {
                   )} />
 
                   <Route path="/login" component={Login}/>
-                  <Route path="/admin-panel" component={Admin}/>
-                {/* <Route path="/admin-panel" component={authCheck(Admin)}/> */}
+                <Route path="/admin-panel" component={AuthCheck(Admin)}/>
             </Router>
         )
     }
