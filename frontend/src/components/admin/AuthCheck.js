@@ -14,7 +14,7 @@ export default function withAuth(ComponentToProtect) {
 
     componentDidMount() {
       const token = localStorage.token
-      axios.get('http://localhost:5000/api/v1/checkAuth',{ 
+      axios.get('https://cipher-blog.herokuapp.com/api/v1/checkAuth',{ 
             headers: {
                'Content-Type' : 'application/json',
                'Authorization' : `Bearer ${token}`

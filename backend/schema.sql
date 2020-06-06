@@ -19,7 +19,7 @@ CREATE TABLE projects (
     date time with time zone
 );
 
-CREATE TABLE users (
+CREATE TABLE admin (
     uid SERIAL PRIMARY KEY,
     username character(255),
     email character(255),

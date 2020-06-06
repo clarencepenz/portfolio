@@ -3,7 +3,7 @@ import { ADMIN_LOGIN } from './action-type'
 
 export const createAdmin = (data,  history) => dispatch =>{
     const token = localStorage.token
-    axios.post('http://localhost:5000/api/v1/auth/login', data, {
+    axios.post('https://cipher-blog.herokuapp.com/api/v1/auth/login', data, {
         headers: {
             'content-type': 'application/json',
             'Authorization' : `Bearer ${token}`
