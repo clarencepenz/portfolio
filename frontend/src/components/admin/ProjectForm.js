@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createProject } from '../../actions/projectAction'
+import IMAGE from '../../images/no_image.jpg'
 class ProjectForm extends Component {
     state = {      
         url: null,
@@ -49,7 +50,7 @@ class ProjectForm extends Component {
                 <h3>project</h3>
                  <form onSubmit={this.onSubmit}  >
                  <div>
-                        <img src={url  ? img  || url  : 'logo'  } alt='project' />
+                        <img src={url  ? img  || url  : IMAGE  } alt='project' style={{height: 'auto', width: '120px', borderRadius: '10px'}}/>
                     </div>
                  <input              
                     type="file"

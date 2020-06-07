@@ -21,7 +21,8 @@ class ProjectList extends Component {
                     <br/>
                     <span>Web: {pro.web}</span>
                     <br/>
-                    <span>Code: {pro.code}</span>
+                    <span>Code: {pro.repo}</span>
+                    <br/>
                         <button onClick={()=> this.props.delProject(pro.pid)}>x</button>
                 </div>
             </div>
