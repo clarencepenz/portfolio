@@ -2,14 +2,16 @@ import {NEW_MSG, GET_MSGS, DELETE_MSG } from '../actions/action-type'
 
 const initialState ={
     msg: {},
-    msgs: []
+    msgs: [],
+    status: false
 }
 
 export const msgReducer =(state = initialState, action)=>{
     switch(action.type){
         case NEW_MSG:
             return {
-                msg: action.payload
+                msg: action.payload,
+                status: true
             }
         case GET_MSGS:
             return {

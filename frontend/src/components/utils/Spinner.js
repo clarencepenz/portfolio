@@ -4,7 +4,10 @@ import { StyledSpinner } from '../styles/StyledSpinner'
  class Spinner extends Component {
     render() {
         return (
-            <StyledSpinner/>
+            <div>
+                 <StyledSpinner/>
+                 <p style={{color: '#fff', textAlign: 'center'}}>project loading...</p>
+            </div>
         )
     }
 }

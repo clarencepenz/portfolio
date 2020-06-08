@@ -72,6 +72,7 @@ class Contact extends Component {
                         onChange={this.onChange}
                         />
                         <br/>
+                        {this.props.msg ? 'Msg sent' : ''}
                         <button type='submit'>Send</button>
                 </form>
                 </div>
@@ -80,5 +81,8 @@ class Contact extends Component {
     }
 }
 
+const mapStateToProps = (state)=>({
+    msg: state.msg.status
+})
 
-export default  connect(null, {createMSG})(Contact)
+export default  connect(mapStateToProps, {createMSG})(Contact)
