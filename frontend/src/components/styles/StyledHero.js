@@ -21,19 +21,7 @@ export const StyledHeader = styled.div`
 
   a {
     display: inline-flex;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 50%;
-    border: 2px solid #33a21d;
-  }
-
-  a:hover {
-    background: #33a21d;
-    color: #000;
+    text-decoration: none;
   }
 
   h2 {
@@ -70,6 +58,22 @@ export const StyledHeader = styled.div`
       display: block;
   }
 
+  .socials {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+    border: 2px solid #33a21d;
+  }
+
+  .socials:hover {
+    background: #33a21d;
+    color: #000;
+  }
+
   .about {
     padding-left: 90px;
 
@@ -87,13 +91,23 @@ export const StyledHeader = styled.div`
       }
   }
 
-  button {
+  .download {
     border: none;
     color: #fff;
     background-color: #33a21d;
     padding: 10px 40px;
     border-radius: 25px;
   }
+
+  .download:hover {
+    border: none;
+    background-color: #fff;
+    color: #33a21d;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 25px;
+  }
+
 
   .button-container {
     @media screen and (max-width: 700px) {

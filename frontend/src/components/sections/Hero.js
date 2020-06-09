@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import CV from '../../docs/Clarence-Bakosi-CV.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -6,6 +7,16 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { StyledHeader } from '../styles/StyledHero'
 
 library.add(fab)
+
+class DownloadLink extends Component {
+    render() {
+        return(
+            <StyledHeader>
+               <a  className='download' href={this.props.src} download target='_blank' rel="noopener noreferrer">{this.props.children}</a>
+            </StyledHeader>
+        )
+    }
+}
 export default class Hero extends Component {
     render() {
         return (
@@ -34,14 +45,14 @@ export default class Hero extends Component {
                       i am currently available to take on any project. 
                   </p>
                   <div className='button-container'>
-                     <button>Download cv</button>
+                     <DownloadLink src={CV}>Download cv</DownloadLink>
                   </div>
                   <h6 style={{textAlign: 'center'}}>Want to get in touch?</h6> 
                   <div className='social-links'>
                     <ul>
-                        <li><a href="https://twitter.com/x8inez" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'twitter']} /></a></li>
-                        <li><a href="https://github.com/clarencepenz" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
-                        <li><a href="mailto:clarencedespenz@gmail.com? subject= subject text"><FontAwesomeIcon icon={faEnvelope} /></a></li>
+                        <li><a className='socials' href="https://twitter.com/x8inez" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'twitter']} /></a></li>
+                        <li><a className='socials' href="https://github.com/clarencepenz" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
+                        <li><a className='socials' href="mailto:clarencedespenz@gmail.com? subject= subject text"><FontAwesomeIcon icon={faEnvelope} /></a></li>
                     </ul>
                   </div>
                </div>
