@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect} from 'react-redux'
 import { createMSG } from '../../actions/messageAction'
 import { StyledContact } from '../styles/StyledContact'
+import Success from '../utils/Success'
 
 class Contact extends Component {
     state= {
@@ -72,7 +73,7 @@ class Contact extends Component {
                         onChange={this.onChange}
                         />
                         <br/>
-                        {this.props.msg ? 'Msg sent' : ''}
+                        {this.props.msg ? <Success/> : ''}
                         <button type='submit'>Send</button>
                 </form>
                 </div>
