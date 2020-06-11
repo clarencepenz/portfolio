@@ -28,6 +28,11 @@ export const StyledHeader = styled.div`
     margin-bottom: 10px;
     font-family: sans-serif;
     font-size: 24px;
+
+    
+    @media screen and (max-width: 700px) {
+      font-size: 18px;
+    }
   }
 
   h3 {
@@ -43,6 +48,10 @@ export const StyledHeader = styled.div`
       text-align: center;
       font-family: sans-serif;
       font-size: 24px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 20px;
+      }
   }
 
   h6 {
@@ -97,6 +106,10 @@ export const StyledHeader = styled.div`
     background-color: #33a21d;
     padding: 10px 40px;
     border-radius: 25px;
+    
+    @media screen and (max-width: 700px) {
+      padding: 10px 20px;
+    }
   }
 
   .download:hover {
@@ -106,6 +119,10 @@ export const StyledHeader = styled.div`
     font-weight: 600;
     padding: 10px 40px;
     border-radius: 25px;
+
+    @media screen and (max-width: 700px) {
+      padding: 10px 20px;
+    }
   }
 
 

@@ -23,11 +23,11 @@ export const StyledContact = styled.div`
   form {
       background-color: #000;
       padding: 40px 0;
-      width: 100%!important;
+      min-width: 100%!important;
 
       @media screen and (max-width: 700px) {
         padding: 20px 0px;
-        width: 100%!important;
+        min-width: 100%!important;
     }
 
       @media screen and (max-width: 320px) {
@@ -36,31 +36,30 @@ export const StyledContact = styled.div`
   }
 
   input {
-      width: 80%!important;
+      min-width: 100%!important;
       margin-bottom: 10px!important;
       border-radius: 25px;
       border: 2px solid #33a21d;
       padding: 10px 0 10px 10px;
 
-      @media screen and (max-width: 700px) {
-        width: 100%!important;
+      @media screen and (max-width: 768px) {
+        min-width: 97%!important;
     }
  
     @media screen and (max-width: 320px) {
-  
       min-width: 100%;
   }
 
   }
 
   textarea {
-    width: 80%!important;
+    min-width: 100%!important;
     border-radius: 25px;
     border: 2px solid #33a21d;
     padding: 10px 0 10px 10px;
 
-    @media screen and (max-width: 700px) {
-        width: 100%!important;
+    @media screen and (max-width: 768px) {
+        min-width: 97%!important;
     }
   }
 
@@ -71,9 +70,11 @@ export const StyledContact = styled.div`
     padding: 20px 38%;
     margin-top: 10px;
     border-radius: 25px;
+    min-width: 100%;
 
     @media screen and (max-width: 700px) {
       padding: 10px 38%;
+      min-width: 100%;
     }
   }
 
