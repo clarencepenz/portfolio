@@ -32,7 +32,7 @@ export default class Hero extends Component {
                </div>
                <div className='container-info'>
                   <h4> About me </h4> 
-                  <h2>Greetings! I am a Web developer from Nigeria.</h2>
+                  <h2>Greetings! I am a Web developer.</h2>
                   <p>I am a self-taught developer with roughly 2yrs of experience who uses modern technologies like React.js, Node.js, Express, MongoDB,
                       Postgresql and Vue.js to translate designs and mockups into functional, quality and responsive webpages.
                       I also offer backend services like integration of Restful API's, authentication with JWT e.t.c.

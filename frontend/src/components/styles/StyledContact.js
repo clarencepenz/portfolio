@@ -11,12 +11,11 @@ export const StyledContact = styled.div`
   letter-spacing: 0.1rem;
   padding-top: 40px;
   
- 
-  h3 {
-    font-size: 24px;
 
-      @media screen and (max-width: 700px) {
-        font-size: 18px;
+
+  h3 {
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
     }
   }
 
@@ -73,7 +72,7 @@ export const StyledContact = styled.div`
     min-width: 100%;
 
     @media screen and (max-width: 700px) {
-      padding: 10px 38%;
+      padding: 15px 38%;
       min-width: 100%;
     }
   }
@@ -81,6 +80,14 @@ export const StyledContact = styled.div`
   .title {
     @media screen and (max-width: 700px) {
       margin-left: 20px!important;
+    }
+  }
+
+  .heading {
+    font-size: 24px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 18px;
     }
   }
 

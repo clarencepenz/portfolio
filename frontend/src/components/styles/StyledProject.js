@@ -74,13 +74,6 @@ letter-spacing: 0.1rem;
   .card:hover > .back{
     transform: perspective(600px) rotateY(0deg);
   }
-  
-
- 
-  @media screen and (max-width: 700px) {
-    
-  }
-
 `;
 
 
@@ -88,14 +81,17 @@ export const StyledContainer = styled.div`
 line-height: 1.6rem;
 letter-spacing: 0.1rem;
 
+h3 {
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+  }
+}
 .title {
   @media screen and (max-width: 700px) {
     margin-left: 20px!important;
   }
 }
   
-  @media screen and (max-width: 700px) {
-    
-  }
+  
 
 `;

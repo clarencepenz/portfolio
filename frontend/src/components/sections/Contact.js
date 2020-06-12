@@ -39,7 +39,7 @@ class Contact extends Component {
                   <h3 className='title' style={{ marginLeft: '90px', marginTop: '0',  paddingLeft: '20px', borderLeft: '6px solid #33a21d', marginBottom: '0'}}>Contact</h3>
                 </div>
                 <div className='contactStyle'>
-                <h3>Wanna hire me?</h3>
+                <h4 className='heading'>Wanna hire me?</h4>
                 <form onSubmit={this.onSubmit}>
                     <input
                         type='text'

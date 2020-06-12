@@ -39,7 +39,14 @@ export const StyledFooter = styled.div`
 
   p {
       text-align: center;
-      font-size: 9px!important;
+
+      @media screen and (max-width: 900px) {
+        font-size: 10px!important;
+      }
+
+      @media screen and (max-width: 700px) {
+        font-size: 9px!important;
+      }
   }
   
 

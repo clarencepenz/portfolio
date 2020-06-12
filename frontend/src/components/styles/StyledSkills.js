@@ -13,12 +13,6 @@ export const StyledSkills = styled.div`
   letter-spacing: 0.1rem;
 
 
-  .title {
-    @media screen and (max-width: 700px) {
-      margin-left: 20px!important;
-    }
-  }
-
   @media screen and (max-width: 700px) {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
@@ -27,6 +21,12 @@ export const StyledSkills = styled.div`
 
 
 export const StyledTitle = styled.div`
+  h3 {
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
+    }
+  }
+
   .title {
     @media screen and (max-width: 700px) {
       margin-left: 20px!important;

@@ -28,8 +28,8 @@ export const StyledHeader = styled.div`
     margin-bottom: 10px;
     font-family: sans-serif;
     font-size: 24px;
+    line-height: 1.9rem;
 
-    
     @media screen and (max-width: 700px) {
       font-size: 18px;
     }
@@ -41,6 +41,9 @@ export const StyledHeader = styled.div`
     margin-bottom: 0;
     font-family: sans-serif;
 
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
+    }
   }
  
   h4 {
