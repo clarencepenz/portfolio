@@ -40,8 +40,9 @@ export const StyledHeader = styled.div`
     border-left: 5px solid #33a21d;
     margin-bottom: 0;
     font-family: sans-serif;
+    font-size: 16px;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 980px) {
       font-size: 16px;
     }
   }

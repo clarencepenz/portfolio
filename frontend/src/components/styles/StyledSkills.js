@@ -22,7 +22,9 @@ export const StyledSkills = styled.div`
 
 export const StyledTitle = styled.div`
   h3 {
-    @media screen and (max-width: 900px) {
+    font-size: 16px;
+
+    @media screen and (max-width: 980px) {
       font-size: 16px;
     }
   }
