@@ -44,7 +44,8 @@ class Login extends Component {
                     value={this.state.password}
                     onChange={this.onChange}  />
                 </div>
-                <button type="submit" >Login</button>
+                <button employeeId: "",
+    password: "", >Login</button>
             </form>
         )
     }
