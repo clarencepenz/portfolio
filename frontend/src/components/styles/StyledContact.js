@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const StyledContact = styled.div`
   box-sizing: border-box;
   overflow: hidden;
@@ -10,8 +9,6 @@ export const StyledContact = styled.div`
   line-height: 1.6rem;
   letter-spacing: 0.1rem;
   padding-top: 40px;
-  
-
 
   h3 {
     font-size: 16px;
@@ -22,33 +19,34 @@ export const StyledContact = styled.div`
   }
 
   .form-1 {
-      background-color: #000;
-      padding: 40px 0;
-      width: 400px;
-      display: flex;
-      flex-direction: column;
+    background-color: #000;
+    padding: 40px 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
 
-      @media screen and (max-width: 700px) {
-        padding: 20px 0px;
+    @media screen and (max-width: 700px) {
+      padding: 20px 0px;
+      width: 350px;
     }
 
-      @media screen and (max-width: 320px) {
-        padding: 20px 0px;
+    @media screen and (max-width: 380px) {
+      padding: 20px 0px;
+      width: 300px;
     }
   }
 
   input {
-      margin-bottom: 10px!important;
-      border-radius: 2%;
-      border: 2px solid #33a21d;
-      padding: 20px 0 20px 10px;
+    margin-bottom: 10px !important;
+    border-radius: 2%;
+    border: 2px solid #33a21d;
+    padding: 20px 0 20px 10px;
 
-      @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
     }
- 
-    @media screen and (max-width: 320px) {
-  }
 
+    @media screen and (max-width: 320px) {
+    }
   }
 
   textarea {
@@ -76,33 +74,31 @@ export const StyledContact = styled.div`
 
   .title {
     @media screen and (max-width: 700px) {
-      margin-left: 20px!important;
+      margin-left: 20px !important;
     }
   }
 
   .heading {
     font-size: 24px;
 
-      @media screen and (max-width: 700px) {
-        font-size: 18px;
+    @media screen and (max-width: 700px) {
+      font-size: 18px;
     }
   }
 
   .contactStyle {
-      text-align: center;
-      padding-bottom: 40px;
-      // margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-      // width: 400px;
+    text-align: center;
+    padding-bottom: 40px;
+    // margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    // width: 400px;
 
-      @media screen and (max-width: 720px) {
-        // width: 80%;
-      }
+    @media screen and (max-width: 720px) {
+      // width: 80%;
+    }
   }
- 
-
 `;
