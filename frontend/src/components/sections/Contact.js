@@ -40,7 +40,7 @@ class Contact extends Component {
                 </div>
                 <div className='contactStyle'>
                 <h4 className='heading'>Wanna hire me?</h4>
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit} className='form-1'>
                     <input
                         type='text'
                         name='name'
@@ -48,7 +48,6 @@ class Contact extends Component {
                         placeholder='Enter your name'
                         onChange={this.onChange}
                         />
-                        <br/>
                         <input
                         type='text'
                         name='subject'
@@ -56,7 +55,7 @@ class Contact extends Component {
                         placeholder='Subject'
                         onChange={this.onChange}
                         />
-                        <br/>
+                        
                         <input
                         type='text'
                         name='email'
@@ -64,7 +63,7 @@ class Contact extends Component {
                         placeholder='Enter your email address'
                         onChange={this.onChange}
                         />
-                        <br/>
+                        
                         <textarea
                         type='text'
                         name='message'
@@ -72,7 +71,7 @@ class Contact extends Component {
                         placeholder='Enter your message'
                         onChange={this.onChange}
                         />
-                        <br/>
+                        
                         {this.props.msg ? <Success/> : ''}
                         <button type='submit'>Send</button>
                 </form>

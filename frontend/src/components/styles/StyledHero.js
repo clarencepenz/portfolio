@@ -182,6 +182,7 @@ export const StyledHeader = styled.div`
     grid-column: 4 / 4;
 
     @media screen and (max-width: 700px) {
+      width: 100%;
       grid-column: 1 / 4;
     }
   }

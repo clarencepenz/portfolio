@@ -1,38 +1,42 @@
-import { GET_MSGS, DELETE_MSG, NEW_MSG} from './action-type'
+import {GET_MSGS, DELETE_MSG, NEW_MSG} from './action-type';
 
-
-export const createMSG = data => dispatch =>{
-    fetch('https://cipher-portfolio.herokuapp.com/api/v1/message', {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(res => res.json())
-    .then(msg => dispatch({
+export const createMSG = (data) => (dispatch) => {
+  fetch('https://cipher-portfolio.herokuapp.com/api/v1/message', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+    .then((res) => res.json())
+    .then((msg) =>
+      dispatch({
         type: NEW_MSG,
-        payload: msg
-    }))
-}
+        payload: msg,
+      })
+    );
+};
 
-export const getMsgs =()=> dispatch =>{
-    fetch('https://cipher-portfolio.herokuapp.com/api/v1/message')
-    .then(res => res.json())
-    .then(msg => dispatch({
+export const getMsgs = () => (dispatch) => {
+  fetch('https://cipher-portfolio.herokuapp.com/api/v1/message')
+    .then((res) => res.json())
+    .then((msg) =>
+      dispatch({
         type: GET_MSGS,
-        payload: msg
-    }))
-}
+        payload: msg,
+      })
+    );
+};
 
-
-export const delMsgs =(mid)=> dispatch =>{
-    fetch(`https://cipher-portfolio.herokuapp.com/api/v1/message/${mid}`, {
-        method: 'DELETE'
-    })
-    .then(res => res.json())
-    .then(msg => dispatch({
+export const delMsgs = (mid) => (dispatch) => {
+  fetch(`https://cipher-portfolio.herokuapp.com/api/v1/message/${mid}`, {
+    method: 'DELETE',
+  })
+    .then((res) => res.json())
+    .then((msg) =>
+      dispatch({
         type: DELETE_MSG,
-        payload: msg
-    }))
-}
+        payload: msg,
+      })
+    );
+};
