@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const StyledTrick = styled.div`
   box-sizing: border-box;
   overflow: hidden;
@@ -13,17 +12,15 @@ export const StyledTrick = styled.div`
   align-items: center;
   align-self: center;
 
- h1{
+  h1 {
     @media screen and (max-width: 700px) {
-        font-size: 25px!important;
+      font-size: 25px !important;
     }
- }
+  }
 
- h3{
+  h3 {
     @media screen and (max-width: 700px) {
-        font-size: 15px!important;
+      font-size: 15px !important;
     }
- }
- 
-
+  }
 `;
